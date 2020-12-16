@@ -1,0 +1,29 @@
+{
+  "$schema": "https://hypar.io/Schemas/Function.json",
+  "id": "2d781c85-a952-41d2-b543-72d230f57e16",
+  "name": "Rhino Compute Example",
+  "description": "The RhinoComputeExample function.",
+  "language": "C#",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "Radius": {
+        "type": "number",
+        "minimum": 1.0,
+        "maximum": 10.0,
+        "multipleOf": 0.1
+      }
+    }
+  },
+  "outputs": [
+    {
+      "unit_type": "none",
+      "name": "Volume",
+      "description": "The volume.",
+      "type": "number"
+    }
+  ],
+  "repository_url": "https://github.com/hypar-io/function",
+  "source_file_key": null,
+  "preview_image": null
+}
